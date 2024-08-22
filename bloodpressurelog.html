@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloeddruk Logboek</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bloeddruk Logboek</h1>
+        <button onclick="navigateToClientDashboard()">Terug naar Cliënt Dashboard</button>
+    </header>
+
+    <main>
+        <section id="bloodPressureLogSection">
+            <h2>Voer je bloeddruk in:</h2>
+            <form id="bloodPressureLogForm">
+                <label for="bpDate">Datum:</label>
+                <input type="date" id="bpDate" required>
+                
+                <label for="systolic">Systolische Bloeddruk (mm Hg):</label>
+                <input type="number" id="systolic" required>
+                
+                <label for="diastolic">Diastolische Bloeddruk (mm Hg):</label>
+                <input type="number" id="diastolic" required>
+                
+                <button type="button" onclick="saveBloodPressureLog()">Opslaan</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/bloodPressureLog.js"></script>
+    <script>
+        function navigateToClientDashboard() {
+            window.location.href = 'clientDashboard.html';
+        }
+    </script>
+</body>
+</html>

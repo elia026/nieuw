@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliënt Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cliënt Dashboard</h1>
+        <button onclick="navigateToClientManagement()">Terug naar Cliëntenbeheer</button>
+        <button onclick="navigateToMainDashboard()">Terug naar Hoofd Dashboard</button>
+    </header>
+
+    <main>
+        <section id="clientInfo">
+            <h2>Welkom, <span id="clientNameDisplay"></span></h2>
+            <p id="clientDetails"></p>
+        </section>
+
+        <section id="tests">
+            <h2>Beschikbare Tests</h2>
+            <div class="test-grid">
+                <div class="test-block" id="weightLogBlock" onclick="startTest('weightLog')">
+                    <h3>Gewicht Logboek</h3>
+                    <div class="status-indicator" id="weightLogStatus"></div>
+                </div>
+                <div class="test-block" id="bloodPressureBlock" onclick="startTest('bloodPressure')">
+                    <h3>Bloeddruk Logboek</h3>
+                    <div class="status-indicator" id="bloodPressureStatus"></div>
+                </div>
+                <div class="test-block" id="cooperTestBlock" onclick="startTest('cooperTest')">
+                    <h3>Coopertest</h3>
+                    <div class="status-indicator" id="cooperTestStatus"></div>
+                </div>
+                <div class="test-block" id="coreStabilityTestBlock" onclick="startTest('coreStabilityTest')">
+                    <h3>Core Stability Test</h3>
+                    <div class="status-indicator" id="coreStabilityTestStatus"></div>
+                </div>
+                <div class="test-block" id="lumbarRotationTestBlock" onclick="startTest('lumbarRotationTest')">
+                    <h3>Lumbar Locked Rotation Test</h3>
+                    <div class="status-indicator" id="lumbarRotationTestStatus"></div>
+                </div>
+                <div class="test-block" id="thoracicExtensionTestBlock" onclick="startTest('thoracicExtensionTest')">
+                    <h3>Wall Thoracic Extension Test</h3>
+                    <div class="status-indicator" id="thoracicExtensionTestStatus"></div>
+                </div>
+                <div class="test-block" id="thomasTestBlock" onclick="startTest('thomasTest')">
+                    <h3>Thomas-test</h3>
+                    <div class="status-indicator" id="thomasTestStatus"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/clientDashboard.js"></script>
+</body>
+</html>
+
+
+

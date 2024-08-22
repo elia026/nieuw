@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Thoracic Extension Test</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Verwijst naar je algemene CSS -->
+</head>
+<body>
+    <header>
+        <h1>Wall Thoracic Extension Test</h1>
+        <button onclick="navigateToDashboard()">Terug naar Dashboard</button>
+    </header>
+
+    <main>
+        <section id="wallThoracicExtensionTest">
+            <h2>Voer je score in:</h2>
+            <form id="wallThoracicForm">
+                <label for="thoracicScore">Kies je score:</label>
+                <select id="thoracicScore" required>
+                    <option value="90">90 graden - goed</option>
+                    <option value="60">60 graden - matig</option>
+                    <option value="30">30 graden - slecht</option>
+                </select>
+                
+                <button type="button" onclick="addWallThoracicTest()">Toevoegen</button>
+            </form>
+            <div id="wallThoracicResults"></div>
+        </section>
+    </main>
+
+    <script src="js/wallThoracicExtensionTest.js"></script> <!-- Verwijst naar het JavaScript bestand -->
+    <script>
+        function navigateToDashboard() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

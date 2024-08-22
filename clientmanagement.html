@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliëntenbeheer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cliëntenbeheer</h1>
+        <button onclick="navigateToMainDashboard()">Terug naar Hoofd Dashboard</button>
+    </header>
+
+    <main>
+        <section id="clientManagement">
+            <h2>Nieuwe Cliënt Toevoegen</h2>
+            <form id="clientForm">
+                <label for="clientName">Naam:</label>
+                <input type="text" id="clientName" required>
+                
+                <label for="clientBirthdate">Geboortedatum:</label>
+                <input type="date" id="clientBirthdate" required>
+                
+                <button type="button" onclick="addClient()">Cliënt Toevoegen</button>
+            </form>
+        </section>
+
+        <section id="clientList">
+            <h2>Bestaande Cliënten</h2>
+            <div id="clientsContainer"></div>
+        </section>
+    </main>
+
+    <script src="js/clientManagement.js"></script>
+</body>
+</html>
+

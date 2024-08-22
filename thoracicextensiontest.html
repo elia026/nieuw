@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Thoracic Extension Test</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Wall Thoracic Extension Test</h1>
+        <button onclick="navigateToClientDashboard()">Terug naar Cliënt Dashboard</button>
+    </header>
+
+    <main>
+        <section id="thoracicExtensionTestSection">
+            <h2>Voer je score in:</h2>
+            <form id="thoracicExtensionTestForm">
+                <label for="thoracicAngle">Hoek (graden):</label>
+                <input type="number" id="thoracicAngle" required>
+                
+                <button type="button" onclick="saveThoracicExtensionTest()">Opslaan</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/thoracicExtensionTest.js"></script>
+    <script>
+        function navigateToClientDashboard() {
+            window.location.href = 'clientDashboard.html';
+        }
+    </script>
+</body>
+</html>

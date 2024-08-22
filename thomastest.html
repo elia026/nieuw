@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas-test</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Thomas-test</h1>
+        <button onclick="navigateToClientDashboard()">Terug naar Cliënt Dashboard</button>
+    </header>
+
+    <main>
+        <section id="thomasTestSection">
+            <h2>Voer je scores in:</h2>
+            <form id="thomasTestForm">
+                <label for="leftLeg">Linker been:</label>
+                <select id="leftLeg" required>
+                    <option value="" disabled selected>Kies een score</option>
+                    <option value="Slecht">Slecht</option>
+                    <option value="Matig">Matig</option>
+                    <option value="Goed">Goed</option>
+                </select>
+                
+                <label for="rightLeg">Rechter been:</label>
+                <select id="rightLeg" required>
+                    <option value="" disabled selected>Kies een score</option>
+                    <option value="Slecht">Slecht</option>
+                    <option value="Matig">Matig</option>
+                    <option value="Goed">Goed</option>
+                </select>
+                
+                <button type="button" onclick="saveThomasTest()">Opslaan</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/thomasTest.js"></script>
+    <script>
+        function navigateToClientDashboard() {
+            window.location.href = 'clientDashboard.html';
+        }
+    </script>
+</body>
+</html>

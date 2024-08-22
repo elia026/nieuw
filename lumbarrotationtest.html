@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumbar Locked Rotation Test</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lumbar Locked Rotation Test</h1>
+        <button onclick="navigateToClientDashboard()">Terug naar Cliënt Dashboard</button>
+    </header>
+
+    <main>
+        <section id="lumbarRotationTestSection">
+            <h2>Voer je scores in:</h2>
+            <form id="lumbarRotationTestForm">
+                <label for="leftRotation">Rotatie naar links (graden):</label>
+                <input type="number" id="leftRotation" required>
+                
+                <label for="rightRotation">Rotatie naar rechts (graden):</label>
+                <input type="number" id="rightRotation" required>
+                
+                <button type="button" onclick="saveLumbarRotationTest()">Opslaan</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/lumbarRotationTest.js"></script>
+    <script>
+        function navigateToClientDashboard() {
+            window.location.href = 'clientDashboard.html';
+        }
+    </script>
+</body>
+</html>
+
